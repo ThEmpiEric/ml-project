@@ -1,5 +1,13 @@
 pandas
+polars
 numpy
 scikit-learn
 seaborn
+nltk 
+requests
+scipy
+seaborn
+xgboost
+catboost
+statsmodels
 -e .
