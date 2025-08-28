@@ -1,9 +1,7 @@
 import sys 
-from src.logger import logging
+from logger import logging
 
 def error_message_detail(message:str, message_detail:sys):
-    """
-    Extracts detailed error message including file name and line number."""
     exc_tb = message_detail.exc_info()[2] 
     file_name = exc_tb.tb_frame.f_code.co_filename
     line_number = exc_tb.tb_lineno
@@ -18,7 +16,6 @@ class CustomException(Exception):
     def __str__(self):
         return self.error_message
     
-#Testing 
 if __name__ == "__main__":
     try: 
         a = 1 / 0
